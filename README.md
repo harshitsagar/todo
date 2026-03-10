@@ -48,7 +48,7 @@ lib/
 
 1. **Clone repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/todo-firebase-app.git
+   git https://github.com/harshitsagar/todo.git
    cd todo-firebase-app
    
 2. **Add Firebase config**
