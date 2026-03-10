@@ -18,10 +18,9 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VS Code
+.vscode/
+*.code-workspace
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -43,3 +42,95 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# 🔐 FIREBASE SENSITIVE FILES - DO NOT COMMIT
+/google-services.json
+/GoogleService-Info.plist
+firebase.json
+.firebase/
+*.firebase
+.firebaserc
+**/firebase_options.dart
+
+# 🔑 KEYS AND SECRETS
+*.keystore
+*.jks
+*.p12
+*.key
+.env
+.env.local
+.env.production
+.env.development
+secrets.dart
+keys.dart
+config.dart
+*.secret.dart
+
+# 🚫 DATABASE CONFIGURATION
+lib/services/database_service.dart
+!lib/services/database_service.dart.example
+
+# 📱 APK FILES
+*.apk
+*.aab
+*.ipa
+
+# 🔧 LOCAL CONFIGURATION
+local.properties
+*.properties
+key.properties
+android/key.properties
+gradle.properties.local
+
+# 📦 CACHES
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+.dart_tool/
+.packages
+pubspec.lock
+
+# 🧪 TEST COVERAGE
+/coverage/
+/test/.test_coverage.dart
+.test_coverage.dart
+
+# 📝 IDE
+.project
+.classpath
+.settings/
+.idea/
+*.iws
+*.iml
+*.ipr
+*.sw?
+.DS_Store
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/tasks.xml
+
+# 🚀 BUILD OUTPUTS
+build/
+android/app/build/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/AppFrameworkInfo.plist
+ios/Pods/
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+
+# 📋 BACKUP FILES
+*.bak
+*.orig
+*.old
+*~
+
+# 🔒 ENVIRONMENT VARIABLES
+*.env
+*.env.*
+!.env.example
+
+# ⚠️ IMPORTANT: Create example files for sensitive data
+
+# Example database service file (safe to commit)
+database_service.dart.example

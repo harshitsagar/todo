@@ -5,7 +5,7 @@ import '../models/task.dart';
 
 class DatabaseService {
   static const String _baseUrl =
-      'https://todo-app-abf16-default-rtdb.asia-southeast1.firebasedatabase.app'; // Replace with your URL
+      'https://YOUR-PROJECT-ID.firebaseio.com'; // Replace with your URL
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   // Get user's tasks
